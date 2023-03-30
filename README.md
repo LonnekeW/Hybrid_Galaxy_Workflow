@@ -21,7 +21,7 @@ A galaxy workflow for hybrid assembly, species identification and antibiotic res
 | Bandage         | Final assembly graph of Unicycler      | Displays connections not available in contigs file.                       |
 | Quast           | FASTA output of Unicycler              | Evaluates genome assembly.                                                |
 | Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
-| Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart                 | <br>
+| Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
 
 ### Visualising core and pan genomes
 Roary output in phandango.net
