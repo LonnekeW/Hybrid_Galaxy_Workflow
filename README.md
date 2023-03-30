@@ -1,7 +1,7 @@
 ## Hybrid workflow for species identification and antibiotic resistance determination
 
 ### Description
-A galaxy workflow for hybrid assembly, species identification and antibiotic resistance determination.
+A galaxy workflow for hybrid assembly, species identification and antibiotic resistance determination created by Justin Iking, Mirela Minkova, Yorick Doornbos and Lonneke Willems.
 
 ![alt text](https://github.com/LonnekeW/Hybrid_Galaxy_Workflow/blob/main/images/flowchart.png "Workflow Flowchart")
 
