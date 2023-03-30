@@ -22,7 +22,7 @@ Download the .ga directly from this GitHub. Once the download is complete, the f
 | Bandage         | Final assembly graph of Unicycler      | Displays connections not available in contigs file.                       |
 | Quast           | FASTA output of Unicycler              | Evaluates genome assembly.                                                |
 | Prokka          | FASTA output of Unicyler               | Annotates prokaryotic genomes.                                            |
-| Roary           | GFF output of Prokka                   | Creates list of core and pan genomes from Prokka output. Note: Roary needs multiple input files. The Roary input data is separated in the galaxy workflow, allowing for the tool to be run once Proka annotation is complete.     |
+| Roary           | GFF output of Prokka                   | Creates list of core and pan genomes from Prokka output. Note: Roary needs multiple input files. The Roary input data is separated in the galaxy workflow, allowing for the tool to be run separately once Proka annotation is complete.     |
 | RAxML           | Output of Roary                        | Infers phylogeny using core gene SNPs.                                     |
 | Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
 | Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
