@@ -19,7 +19,7 @@ A galaxy workflow for hybrid assembly, species identification and antibiotic res
 | Bandage         |                               |                     |
 | Quast           |                               |                     |
 | Kraken2         |                               |                     |
-| Krona           |                               |                     |
+| Krona           |                               |                     | <br>
 
 ### Visualizing core and pan genomes
 Roary output in phandango.net
