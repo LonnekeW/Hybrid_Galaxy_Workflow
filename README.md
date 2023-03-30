@@ -26,6 +26,3 @@ Download the .ga directly from this GitHub. Once the download is complete, the f
 | RAxML           | Output of Roary                        | Infers phylogeny using core gene SNPs                                     |
 | Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
 | Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
-
-### Visualising core and pan genomes
-Roary output in phandango.net
