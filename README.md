@@ -1,11 +1,11 @@
 ## Hybrid workflow for species identification and antibiotic resistance determination
 
 ### Description
-A galaxy workflow for hybrid assembly, species identification and antibiotic resistance determination created by Justin Iking, Mirela Minkova, Yorick Doornbos and Lonneke Willems. As shown in the flowchart below, the workflow uses two separate input files: ONT long read data and Illumina short read data (both R1 and R2). The data then goes through a quality control step both before and after trimming, followed by an assembly of the data in Unicycler. The Unicycler output is then processed further through Busco, Prokka, StarAMR, Bandage, Quast and Kraken2. 
+A galaxy workflow for hybrid assembly, species identification and antibiotic resistance determination created by Justin Iking, Mirela Minkova, Yorick Doornbos and Lonneke Willems. As shown in the flowchart below, the workflow uses two separate input files: ONT long read data and Illumina short read data (both R1 and R2). The data then goes through a quality control step both before and after trimming, followed by an assembly of the data in Unicycler. The Unicycler output is then processed further through Busco, Prokka, Staramr, Bandage, Quast and Kraken2. 
 
 To uncover the pan-genomes and infer phylogeny, the Prokka output is loaded into Roary and RAxML; the results of which can be visualized in Phandango. 
 
-![alt text](https://github.com/LonnekeW/Hybrid_Galaxy_Workflow/blob/main/assets/flowchart.png "Workflow Flowchart")
+![alt text](https://github.com/LonnekeW/Hybrid_Galaxy_Workflow/blob/main/assets/hybrid_flowchart.png "Workflow Flowchart")
 
 ### Installation
 Download the .ga directly from this GitHub. Once the download is complete, the file can then be imported into galaxy. Make sure to seperate out your short R1, R2 and long read data according to the instructions in the workflow before starting a run with new data.<br>
@@ -20,7 +20,7 @@ Download the .ga directly from this GitHub. Once the download is complete, the f
 | Flitlong        | Long read data                         | Tims long read data by quality.                                           |
 | Unicycler       | Output of Trimmomatic and Flitlong     | Assembles bacterial genomes. For best results in the hybrid assembly, both the short and long read data will be loaded into the tool simultaneously.                                                                            |
 | Busco           | FASTA output of Unicycler              | Evaluates the accuracy of the genome assembly and annotation.             |
-| StarAMR         | FASTA output of Unicycler              | Scans contigs against the antimicrobial resistance databases ResFinder, PlasmidFinder and Pointfinder.                                                                                                                           |
+| Staramr         | FASTA output of Unicycler              | Scans contigs against the antimicrobial resistance databases ResFinder, PlasmidFinder and Pointfinder.                                                                                                                           |
 | Bandage         | Final assembly graph of Unicycler      | Displays connections not available in contigs file.                       |
 | Quast           | FASTA output of Unicycler              | Evaluates genome assembly.                                                |
 | Prokka          | FASTA output of Unicyler               | Annotates prokaryotic genomes.                                            |
