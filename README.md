@@ -11,18 +11,18 @@ Download the .ga directly from this GitHub. Once the download is complete, the f
 ### Workflow Tools
 | **Tool**        | **Input**                              | **Description**                                                           |
 | :---            | :---                                   | :---                                                                      |
-| FastQC          | Short read data                        | Filters paired-end short read data by quality. Note: In order to compare the short read to the long read data in the workflow, both files will be entered in FastQC before the files are transferred to MultiQC.                  |
+| FastQC          | Short read data                        | Filters paired-end short read data by quality. Note: In order to compare the short read to the long read data in the workflow, both files will be entered in FastQC before the files are transferred to MultiQC.                                |
 | Nanoplot        | Long read data                         | Filters long read data by quality.                                        |
 | MultiQC         | Output of FastQC                       | Summarizes the output of FastQC in a single report.                       |
 | Trimmomatic     | Short read data                        | Trims both paired-end and single ended illumina short read data.          |
-| Flitlong        | Long read data                         | Tims long read data by quality.                                           |
-| Unicycler       | Output of Trimmomatic and Flitlong     | Assembles bacterial genomes. For best results in the hybrid assembly, both the short and long read data will be loaded into the tool simultaneously.                                                                            |
+| Flitlong        | Long read data                         | Trims long read data by quality.                                          |
+| Unicycler       | Output of Trimmomatic and Flitlong     | Assembles bacterial genomes. For best results in the hybrid assembly, both the short and long read data will be loaded into the tool simultaneously.                                                                                           |
 | Busco           | FASTA output of Unicycler              | Evaluates the accuracy of the genome assembly and annotation.             |
-| Staramr         | FASTA output of Unicycler              | Scans contigs against the antimicrobial resistance databases ResFinder, PlasmidFinder and Pointfinder.                                                                                                                           |
+| Staramr         | FASTA output of Unicycler              | Scans contigs against the antimicrobial resistance databases ResFinder, PlasmidFinder and Pointfinder.                                                                                                                                            |
 | Bandage         | Final assembly graph of Unicycler      | Displays connections not available in contigs file.                       |
 | Quast           | FASTA output of Unicycler              | Evaluates genome assembly.                                                |
 | Prokka          | FASTA output of Unicyler               | Annotates prokaryotic genomes.                                            |
-| Roary           | GFF output of Prokka                   | Creates list of core and pan genomes from Prokka output. Note: Roary needs multiple input files. The Roary input data is separated in the galaxy workflow, allowing for the tool to be run separately once Proka annotation is complete.     |
-| RAxML           | Output of Roary                        | Infers phylogeny using core gene SNPs.                                     |
+| Roary           | GFF output of Prokka                   | Creates list of core and pan genomes from Prokka output. Note: Roary needs multiple input files. The Roary input data is separated in the galaxy workflow, allowing for the tool to be run separately once Proka annotation is complete.          |
+| RAxML           | Output of Roary                        | Infers phylogeny using core gene SNPs.                                    |
 | Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
 | Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
