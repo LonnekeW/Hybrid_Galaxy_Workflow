@@ -15,11 +15,12 @@ A galaxy workflow for hybrid assembly, species identification and antibiotic res
 | Flitlong        | Long read data                         | Tims long read data by quality.                                           |
 | Unicycler       | Output of Trimmomatic and Flitlong     | Assembles bacterial genomes. For best results in the hybrid assembly, both the short and long read data will be loaded into the tool simultaneously.                                                                            |
 | Busco           | FASTA output of Unicycler              | Evaluates the accuracy of the genome assembly and annotation.             |
-| Prokka          | FASTA output of Unicyler               | Annotates prokaryotic genomes.                                            |
-| Roary           | GFF output of Prokka                   | Creates list of core and pan genomes from Prokka output. Note: Roary needs multiple input files. The Roary input data is seperated in the galaxy workflow, allowing for the tool to be run once Proka annotaton is complete.     |
 | StarAMR         | FASTA output of Unicycler              | Scans contigs against the antimicrobial resistance databases ResFinder, PlasmidFinder and Pointfinder.                                                                                                                           |
 | Bandage         | Final assembly graph of Unicycler      | Displays connections not available in contigs file.                       |
 | Quast           | FASTA output of Unicycler              | Evaluates genome assembly.                                                |
+| Prokka          | FASTA output of Unicyler               | Annotates prokaryotic genomes.                                            |
+| Roary           | GFF output of Prokka                   | Creates list of core and pan genomes from Prokka output. Note: Roary needs multiple input files. The Roary input data is seperated in the galaxy workflow, allowing for the tool to be run once Proka annotaton is complete.     |
+| RAxML           | Output of Roary                        | Infers phylogeny using core gene SNPs                                     |
 | Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
 | Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
 
