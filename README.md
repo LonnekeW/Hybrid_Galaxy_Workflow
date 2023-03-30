@@ -6,20 +6,21 @@ A galaxy workflow for hybrid assembly, species identification and antibiotic res
 ![alt text](https://github.com/LonnekeW/Hybrid_Galaxy_Workflow/blob/main/images/flowchart.png "Workflow Flowchart")
 
 ### Workflow Tools
-| **Tool**        | **Input**                     | **Description**     |
-| :---            | :---                          | :---                |
-| FastQC          | Short or long read data       | Filters by quality  |
-| Nanoplot        | ONT data                      | Filters by quality  |
-| MultiQC         | Illumina or ONT data          | Filters by quality  |
-| Unicycler       | ONT and Illumina data         | Assembles           |
+| **Tool**        | **Input**                              | **Description**                                                           |
+| :---            | :---                                   | :---                                                                      |
+| FastQC          | Short read data                        | Filters paired-end short read data by quality. Note: In order to compare the short read to the long read data in the workflow, both files will be entered in FastQC before the files are transferred to MultiQC.                  |
+| Nanoplot        | Long read data                         | Filters long read data by quality.                                        |
+| MultiQC         | Output of FastQC                       | Summarizes the output of FastQC in a single report.                       |
+| Trimmomatic     | Short read data                        | Trims both paired-end and single ended illumina short read data.          |
+| Flitlong        | Long read data                         | Tims long read data by quality.                                           |
+| Unicycler       | Output of Trimmomatic and Flitlong     | Assembles bacterial genomes. For best results in the hybrid assembly, both the short and long read data will be loaded into the tool simultaneously.                                                                                 |
 | Busco           |                               |                     |
 | Prokka          |                               |                     |
-| Roary           |                               |                     |
 | StarAMR         |                               |                     |
 | Bandage         |                               |                     |
 | Quast           |                               |                     |
 | Kraken2         |                               |                     |
 | Krona           |                               |                     | <br>
 
-### Visualizing core and pan genomes
+### Visualising core and pan genomes
 Roary output in phandango.net
