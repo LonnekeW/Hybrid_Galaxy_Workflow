@@ -1,9 +1,7 @@
 ## Hybrid workflow for species identification and antibiotic resistance determination
 
 ### Description
-A galaxy workflow for hybrid assembly, species identification and antibiotic resistance determination. As shown in the flowchart below, the workflow uses two separate input files: ONT long read data and Illumina short read data (both R1 and R2). The data then goes through a quality control step both before and after trimming, followed by an assembly of the data in Unicycler. The Unicycler output is then processed further through Busco, Prokka, Staramr, Bandage, Quast and Kraken2. 
-
-To uncover the pan-genomes and infer phylogeny, the Prokka output is loaded into Roary and RAxML; the results of which can be visualized in Phandango. 
+A galaxy workflow for hybrid assembly, species identification and antibiotic resistance determination. As shown in the flowchart below, the workflow uses two separate input files: ONT long read data and Illumina short read data (both R1 and R2). The data then goes through a quality control step both before and after trimming, followed by an assembly of the data in Unicycler. The Unicycler output is then processed further through Busco, Prokka, Staramr, Bandage, Quast and Kraken2. To uncover the pan-genomes and infer phylogeny, the Prokka output is loaded into Roary and RAxML; the results of which can be visualized in Phandango. 
 
 ![alt text](https://github.com/LonnekeW/Hybrid_Galaxy_Workflow/blob/main/assets/hybrid_flowchart.png "Workflow Flowchart")
 
