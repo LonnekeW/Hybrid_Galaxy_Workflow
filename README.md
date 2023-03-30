@@ -14,13 +14,13 @@ A galaxy workflow for hybrid assembly, species identification and antibiotic res
 | Trimmomatic     | Short read data                        | Trims both paired-end and single ended illumina short read data.          |
 | Flitlong        | Long read data                         | Tims long read data by quality.                                           |
 | Unicycler       | Output of Trimmomatic and Flitlong     | Assembles bacterial genomes. For best results in the hybrid assembly, both the short and long read data will be loaded into the tool simultaneously.                                                                                 |
-| Busco           |                               |                     |
-| Prokka          |                               |                     |
-| StarAMR         |                               |                     |
-| Bandage         |                               |                     |
-| Quast           |                               |                     |
-| Kraken2         |                               |                     |
-| Krona           |                               |                     | <br>
+| Busco           | FASTA output of Unicycler              | Evaluates the accuracy of the genome assembly and annotation.             |
+| Prokka          | FASTA output of Unicyler               | Annotates prokaryotic genomes.                                            |
+| StarAMR         | FASTA output of Unicycler              | Scans contigs against the antimicrobial resistance databases ResFinder, PlasmidFinder and Pointfinder.                                                                                                                           |
+| Bandage         | Final assembly graph of Unicycler      | Displays connections not available in contigs file.                       |
+| Quast           | FASTA output of Unicycler              | Evaluates genome assembly.                                                |
+| Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
+| Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart                 | <br>
 
 ### Visualising core and pan genomes
 Roary output in phandango.net
