@@ -26,3 +26,10 @@ Download the .ga directly from this GitHub. Once the download is complete, the f
 | RAxML           | Output of Roary                        | Infers phylogeny using core gene SNPs.                                    |
 | Kraken2         | FASTA output of Prokka                 | Assigns taxonomic labels to short DNA sequences.                          |
 | Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
+
+### Visualising with Phandango
+In order to visualise the phylogeneitc reconstruction, a few additional steps need to be taken:
+1. Download the 'gene_presence_absence.csv' output from Roary.
+2. Doownload the results file from RAxML.
+3. Rename the result's file extension to .tree.
+4. Upload both files to http://phandango.net to visualise the results.
