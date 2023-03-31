@@ -28,7 +28,7 @@ Retrieve the .ga directly from this GitHub, the file can then be imported into g
 | Krona           | Taxonomy output of Kraken2             | Visualizes the results of Kraken2 in an interactive chart.                | <br>
 
 ### Visualising with Phandango
-In order to visualise the phylogeneitc reconstruction, a few additional steps need to be taken:
+In order to visualise the phylogenetic reconstruction, a few additional steps need to be taken:
 1. Download the `gene_presence_absence.csv` output from Roary.
 2. Download the `result.nhx` file from RAxML.
 3. Rename the result's file extension to .tree.
