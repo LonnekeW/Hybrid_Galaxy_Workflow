@@ -1,0 +1,17 @@
+fastqc == 0.11.0
+nanoplot == 1.41.0
+multiQC == 1.11
+trimmomatic == 0.38.1
+flitlong == 0.2.1
+unicycler == 0.5.0
+prokka == 1.14.6
+busco == 5.3.2
+staramr == 0.7.2
+bandage == 0.8.1
+quast == 5.0.2
+roary == 3.13.0
+raxml == 8.2.4
+kraken2 == 2.1.1
+convert kraken2 == 1.2
+krona == 2.7.1
+
