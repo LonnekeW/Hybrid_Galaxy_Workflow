@@ -14,4 +14,3 @@ raxml == 8.2.4
 kraken2 == 2.1.1
 convert kraken2 == 1.2
 krona == 2.7.1
-
