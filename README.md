@@ -32,4 +32,4 @@ In order to visualise the phylogenetic reconstruction, a few additional steps ne
 1. Download the `gene_presence_absence.csv` output from Roary.
 2. Download the `result.nhx` file from RAxML.
 3. Rename the result's file extension to .tree.
-4. Upload both files to http://phandango.net to visualise the results.
+4. Upload both files to http://phandango.net to visualise the results.   
