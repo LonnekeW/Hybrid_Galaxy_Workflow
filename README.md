@@ -6,7 +6,7 @@ A galaxy workflow for hybrid assembly, species identification and antibiotic res
 ![alt text](https://github.com/LonnekeW/Hybrid_Galaxy_Workflow/blob/main/assets/flowchart.png "Workflow Flowchart")
 
 ### Installation
-Retrieve the .ga directly from this GitHub. Once the download is complete, the file can then be imported into galaxy. Make sure to seperate out your short R1, R2 and long read data according to the instructions in the workflow before starting a run with new data.<br>
+Retrieve the .ga directly from this GitHub, the file can then be imported into galaxy. Make sure to seperate out your short R1, R2 and long read data according to the instructions in the workflow before starting a run with new data.<br>
 
 ### Workflow Tools
 | **Tool**        | **Input**                              | **Description**                                                           |
