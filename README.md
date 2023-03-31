@@ -30,6 +30,6 @@ Retrieve the .ga directly from this GitHub, the file can then be imported into g
 ### Visualising with Phandango
 In order to visualise the phylogeneitc reconstruction, a few additional steps need to be taken:
 1. Download the 'gene_presence_absence.csv' output from Roary.
-2. Doownload the results file from RAxML.
+2. Download the results file from RAxML.
 3. Rename the result's file extension to .tree.
 4. Upload both files to http://phandango.net to visualise the results.
